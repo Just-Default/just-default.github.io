@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+
+<div id="border">
+     
+<div id="main2">    
+    <div id = "addedContainer">
+
+        <div id ="contained">
+            <button name = "0" class = "selected button" onClick="highlight(this)"></button>
+        </div>
+        
+        <div id ="addOrRemove">
+            <div class = "switchPosition">  
+                <div class="titles3">combined</div>
+
+                <label class="switch">
+                    <input type="checkbox" id="toggled">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            
+            <button id ="adjustButton1" onclick ="addNewSet()">+</button>
+            <button id ="adjustButton2" onclick ="removeSet()">x</button>
+        </div>
+    </div>
+</div>
+    
+
+<div id="main">
+    
+    <h1 class="titles">Artifact type: </h1> 
+    
+    <form>
+       <select id="typeComboBox" name="types" onchange="changeMainStats()">
+        <option value="flower">Flower of Life</option>
+        <option value="plume">Plume of Death</option>
+        <option value="sands">Sands of Eon</option>
+        <option value="goblet">Goblet of Eonothem</option>
+        <option value="circlet">Circlet of Logos</option>
+      </select>
+    </form>
+
+    <h1 class="titles">Main stat: </h1>
+    <form>
+       <select id="mainComboBox" name="mainStat">
+        <option value="HP">HP</option>
+      </select>
+    </form>
+
+    <h1 class="titles">Sub stats (optional):</h1>
+
+    <div id="new1"></div>
+    <div id="new2"></div>
+    <div id="new3"></div>
+    <div id="new4"></div>
+    
+    <div id = "subRollsContainer" >
+        <div class = "titles4">At least </div>
+        <select id = "subRollsBox1" onChange="SubRollsCalc()" >
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div class = "titles4"> good roll(s) for</div>
+        <select id = "subRollsBox2" onChange="SubRollsCalc()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <div class = "titles4"> sub stat(s)</div>
+        <div id = "subRollPercentage" class = "titles5">(100%)</div>
+    </div>
+
+    <div id = "addSubButton" onClick="addSubStat(0)"></div>
+    
+    
+ 
+    </div>
+    <div id="main3">
+        
+    <div id="flex"></div>
+    <div id="flex2"></div>
+        
+    <div id = "outsideContainer" style="height: 230px; width: 112%;">
+    <canvas id="chartContainer" ></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <div id = calcPadding>
+    <button id = "calculateButton" onClick="calculate()">Calculate</button>
+    </div>
+
+    </div>
+    
+</div>
+
+<script src="probability.js"></script>
+         
+ </body>
+ </html>
