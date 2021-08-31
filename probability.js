@@ -688,10 +688,10 @@ function addNewSet(){
 
 function removeSet(){
     var selectedButton = document.getElementsByClassName("selected button");
-    var totalButtons = document.getElementsByClassName("button");    
+    var totalButtons = document.getElementsByClassName("button");  
     var index = selectedButton[0].name;
     
-    if(selectedButton.length ===1  && totalButtons.length >1){
+    if(selectedButton.length ===1  && totalButtons.length >1 && selectedButton[0] !== document.getElementById("firstRounded")){
         selectedButton[0].parentNode.removeChild(selectedButton[0]);
         totalButtons = document.getElementsByClassName("button"); 
         
@@ -706,7 +706,7 @@ function removeSet(){
                 totalButtons[i].className = "selected button";
             }
         }
-    }
+        
     types.splice(index,1);
     mainStats.splice(index,1);
     subStats1.splice(index,1);
@@ -716,6 +716,20 @@ function removeSet(){
     
     subRolls.splice(index,1);
     subRollsInAmountOfStats.splice(index,1);
+    }
+    else if(selectedButton.length ===1  && totalButtons.length >1 && index == document.getElementById("firstRounded").name){
+        totalButtons[totalButtons.length -1].parentNode.removeChild(totalButtons[totalButtons.length-1]);
+        
+        types.splice(index,1);
+        mainStats.splice(index,1);
+        subStats1.splice(index,1);
+        subStats2.splice(index,1);
+        subStats3.splice(index,1);
+        subStats4.splice(index,1);
+
+        subRolls.splice(index,1);
+        subRollsInAmountOfStats.splice(index,1);
+    }
     
     pushStatsForSelected();
 }

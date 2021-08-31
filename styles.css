@@ -50,7 +50,7 @@ p {
     padding-top: 0px;
     padding-bottom: 5px;
     padding-right: 0px;
-    padding-left: 5px;
+    padding-left: 0px;
     margin: 0px;
     align-items: center;
 }
@@ -126,7 +126,7 @@ p {
   background-size: 100%;
   text-align: left;
   text-indent: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .titles4{
   color: #D1D1D1;
@@ -189,16 +189,6 @@ p {
   padding-right: 0px;
   margin-right:1px;
 }
-
-.selected {
-  background-color: #307576;
-  border-radius: 4px;
-  border: 1px solid #307576;
-  color: white;
-  cursor: pointer;
-  width: 30px;
-  height: 15px;
-  }
 #addedContainer {
   margin-top: 0px;
   display: flex;
@@ -216,75 +206,41 @@ p {
     gap: 0px;
     margin-right: 0px;
 }
-.setsButton {
-  background-color: #21232b;
-  border-radius: 4px;
-  border: 1px solid grey;
+#firstRounded{
+    border-radius: 10px 0px 0px 0px;
+}
+.selected {
+  background-color: #307576;
+  border: 1px solid #307576;
   color: white;
   cursor: pointer;
   width: 30px;
-  height: 15px; 
+  height: 17px;
+  }
+.setsButton {
+  background-color: #21232b;
+  border: 1px #969696;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: none;
+  border-left-style: none;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  height: 17px;
 }
 .setsButton:hover {
   background-color: white;
-  border-radius: 4px;
-  border: 1px solid grey;
+  border: 1px #969696;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-top-style: none;
+  border-left-style: none;
   color: white;
   cursor: pointer;
   width: 30px;
-  height: 15px; 
+  height: 17px; 
 }
-
-#addOrRemove {
-  display: flex;
-  padding-left: 10px;
-  flex: 0%;
-  margin-top: 0px;
-  margin-left: 10px;
-}
-#adjustButton1{
-  background-color: #21232b;
-  border:  none;
-  color: white;
-  cursor: pointer;
-  width: 20px;
-  height: 10px; 
-  text-indent: 0px;
-  margin-top: 0px;
-  font-weight: 500;
-  font-family: Helvetica;
-  font-size: 143%;
-  
-}
-#adjustButton2{
-  background-color: #21232b;
-  border:  none;
-  color: white;
-  cursor: pointer;
-  width: 20px;
-  height: 10px; 
-  text-indent: 0px;
-  margin-top: 1px;
-  padding-bottom: 0px;
-  font-weight: 500;
-  font-family: Helvetica;
-  font-size: 115%;
-
-}
-
-#head-percentage{
-  color: White;
-  box-sizing: border-box;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 5px;
-  padding-right: 10px;
-  text-align: left;
-  font-family: Arial;
-  font-weight: 200;
-  font-size: 92%;
-}
-
 .switch {
   position: relative;
   display: inline-block;
@@ -347,6 +303,53 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#addOrRemove {
+  display: flex;
+  padding-left: 10px;
+  flex: 0%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+#adjustButton1{
+  background-color: #21232b;
+  border:  none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 10px; 
+  text-indent: 0px;
+  margin-top: 0px;
+  font-weight: 500;
+  font-family: Helvetica;
+  font-size: 143%;
+  
+}
+#adjustButton2{
+  background-color: #21232b;
+  border:  none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 10px; 
+  text-indent: 0px;
+  margin-top: 1px;
+  padding-bottom: 0px;
+  font-weight: 500;
+  font-family: Helvetica;
+  font-size: 115%;
+}
+#head-percentage{
+  color: White;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 10px;
+  text-align: left;
+  font-family: Arial;
+  font-weight: 200;
+  font-size: 92%;
+}
 
 #flex{
     display: flex;
@@ -403,8 +406,8 @@ input:checked + .slider:before {
 }
 
 #calcPadding{
-    padding-top: 5px;
-    padding-bottom: 0px;
+    padding-top: 7px;
+    padding-bottom: 1px;
     padding-right: 30px;
     padding-left: 180px;
     margin: 0px;
@@ -428,3 +431,4 @@ background-color: #bf1692;
   font-family: Arial;
   font-size: 92%;
 }
+
