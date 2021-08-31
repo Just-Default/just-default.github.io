@@ -1,0 +1,431 @@
+body {
+  background-color: #21232b;
+}
+h1 {
+  color: White;
+}
+
+p {
+  color: White;
+}
+
+.titles{
+  color: White;
+  padding-top: 8px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 92%;
+}
+.titles2{
+  color: White;
+  padding-top: 27px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 85%;
+  flex: 17%;
+}
+#border{
+    width: 480px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid White;
+    margin: 50px;
+}
+#main{
+    width: 420px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 27px;
+    margin: 0px;
+}
+#main2{
+    width: 420px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    padding-left: 5px;
+    margin: 0px;
+    align-items: center;
+}
+#main3{
+    width: 420px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 18px;
+    padding-right: 0px;
+    padding-left: 5px;
+    margin: 0px;
+    align-items: center;
+}
+#typeComboBox {
+  width: 100%;
+  padding: 8px 14px;
+  border: 1px solid White;
+  border-radius: 5px;
+  background-color: #21232b;
+  color: white;
+  font-family: Arial;
+  font-size: 95%;
+}
+#mainComboBox {
+  width: 100%;
+  padding: 8px 14px;
+  border: 1px solid White;
+  border-radius: 5px;
+  background-color: #21232b;
+  color: white;
+  font-family: Arial;
+  font-size: 95%;
+}
+
+#subStatsBox {
+  width: 50%;
+  padding: 8px 14px;
+  border: 1px solid White;
+  border-radius: 5px;
+  background-color: #21232b;
+  color: white;
+  font-family: Arial;
+  font-size: 85%;
+  margin-bottom: 10px;
+}
+#removeButton{
+    background-color: #21232b;
+    color: white;
+    border: none;
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 92%;
+}
+
+#subStatDisplayed{
+    padding-top: 0px;
+    margin-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+}
+#addSubButton {
+  background-color: #7E51C7;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px; 
+  background-image: url('plus_icon.png');
+  background-repeat:no-repeat;
+  background-position:0px 0px;
+  background-size: 100%;
+  text-align: left;
+  text-indent: 0px;
+  margin-bottom: 10px;
+}
+.titles4{
+  color: #D1D1D1;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  text-align: left;
+  padding-left: 2px;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 90%;
+  padding-right: 5px;
+}
+.titles5{
+  color: grey;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  text-align: left;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 90%;
+  padding-right: 5px;
+  padding-left: 50px;
+}
+#subRollsContainer{
+  margin-top: 2px;
+  margin-bottom: 10px;
+  display: none;
+  width: 120%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  gap: 5px;
+  flex: 10%;
+}
+#subRollsBox1{
+  width: 7%;
+  height: 50%;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 0px;
+  background-color: #21232b;
+  color: white;
+  font-family: Arial;
+  font-size: 78%;
+  margin-top: 6px;
+  padding-right: 0px;
+  margin-right:1px;
+}
+#subRollsBox2 {
+  width: 7%;
+  height: 50%;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 0px;
+  background-color: #21232b;
+  color: white;
+  font-family: Arial;
+  font-size: 78%;
+  margin-top: 6px;
+  padding-right: 0px;
+  margin-right:1px;
+}
+
+.selected {
+  background-color: #307576;
+  border-radius: 4px;
+  border: 1px solid #307576;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  height: 15px;
+  }
+#addedContainer {
+  margin-top: 0px;
+  display: flex;
+  width: 112%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: space-between;
+}
+#contained{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    padding: 0px;
+    flex: 99%;
+    gap: 0px;
+    margin-right: 0px;
+}
+.setsButton {
+  background-color: #21232b;
+  border-radius: 4px;
+  border: 1px solid grey;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  height: 15px; 
+}
+.setsButton:hover {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid grey;
+  color: white;
+  cursor: pointer;
+  width: 30px;
+  height: 15px; 
+}
+
+#addOrRemove {
+  display: flex;
+  padding-left: 10px;
+  flex: 0%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+#adjustButton1{
+  background-color: #21232b;
+  border:  none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 10px; 
+  text-indent: 0px;
+  margin-top: 0px;
+  font-weight: 500;
+  font-family: Helvetica;
+  font-size: 143%;
+  
+}
+#adjustButton2{
+  background-color: #21232b;
+  border:  none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 10px; 
+  text-indent: 0px;
+  margin-top: 1px;
+  padding-bottom: 0px;
+  font-weight: 500;
+  font-family: Helvetica;
+  font-size: 115%;
+
+}
+
+#head-percentage{
+  color: White;
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 10px;
+  text-align: left;
+  font-family: Arial;
+  font-weight: 200;
+  font-size: 92%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  padding-left: 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #17171C;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 11px;
+  width: 11px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #307576;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #307576;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(11px);
+  -ms-transform: translateX(11px);
+  transform: translateX(11px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+#flex{
+    display: flex;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+#flex2{
+    display: flex;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+}
+
+.titles3{
+  color: #EDEDED;
+  padding-top: 2px;
+  padding-bottom: 0px;
+  margin-top: 5px;
+  margin-left: 0px;
+  padding-right: 10px;
+  
+  text-align: left;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 78%;
+  flex: 7%;
+}
+
+.switchPosition{
+    display: flex;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-top:0px;
+    gap: 0px;
+    flex: 30%;
+}
+#percentage{
+    color: White;
+    box-sizing: border-box;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    text-align: left;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 92%;
+    margin: 1px;
+}
+
+#calcPadding{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 180px;
+    margin: 0px;
+    align-items: center;
+}
+
+#calculateButton {
+background-color: #bf1692;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  height: 40px; 
+
+  text-align: center;
+  text-indent: 0px;
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Arial;
+  font-size: 92%;
+}
+
