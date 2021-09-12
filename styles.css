@@ -343,7 +343,7 @@ input:checked + .slider:before {
   width: 20px;
   height: 10px; 
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 #adjustButton2{
   background-color: #21232b00;
@@ -353,7 +353,7 @@ input:checked + .slider:before {
   width: 20px;
   height: 10px; 
   margin-top: 4px;
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 #head-percentage{
   color: White;
