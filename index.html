@@ -3,6 +3,7 @@
  <head>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="Item_Primogem.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  </head>
  <body>
 
@@ -10,7 +11,6 @@
      
 <div id="main2">    
     <div id = "addedContainer">
-
         <div id ="contained">
             <button name = "0" class = "selected button"  id="firstRounded" onClick="highlight(this)"></button>
         </div>
@@ -20,7 +20,7 @@
                 <div class="titles3">combined</div>
 
                 <label class="switch">
-                    <input type="checkbox" id="toggled">
+                    <input type="checkbox" id="toggled" onchange="calculate()">
                     <span class="slider round"></span>
                 </label>
             </div>
@@ -37,18 +37,18 @@
     
     <form>
        <select id="typeComboBox" name="types" onchange="changeMainStats()">
-        <option value="flower">Flower of Life</option>
-        <option value="plume">Plume of Death</option>
-        <option value="sands">Sands of Eon</option>
-        <option value="goblet">Goblet of Eonothem</option>
-        <option value="circlet">Circlet of Logos</option>
+        <option id="options" value="flower">Flower of Life</option>
+        <option id="options" value="plume">Plume of Death</option>
+        <option id="options" value="sands">Sands of Eon</option>
+        <option id="options" value="goblet">Goblet of Eonothem</option>
+        <option id="options" value="circlet">Circlet of Logos</option>
       </select>
     </form>
 
     <h1 class="titles">Main stat: </h1>
     <form>
        <select id="mainComboBox" name="mainStat">
-        <option value="HP">HP</option>
+        <option id="options" value="HP">HP</option>
       </select>
     </form>
 
@@ -61,19 +61,19 @@
     <div id = "subRollsContainer" >
         <div class = "titles4">At least </div>
         <select id = "subRollsBox1" onChange="SubRollsCalc()" >
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option id="options" value="0">0</option>
+            <option id="options" value="1">1</option>
+            <option id="options" value="2">2</option>
+            <option id="options" value="3">3</option>
+            <option id="options" value="4">4</option>
+            <option id="options" value="5">5</option>
         </select>
         <div class = "titles4"> good roll(s) for</div>
         <select id = "subRollsBox2" onChange="SubRollsCalc()">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
+            <option id="options" value="1">1</option>
+            <option id="options" value="2">2</option>
+            <option id="options" value="3">3</option>
+            <option id="options" value="4">4</option>
         </select>
         <div class = "titles4"> sub stat(s)</div>
         <div id = "subRollPercentage" class = "titles5">(100%)</div>
@@ -93,9 +93,12 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <div id = calcPadding>
-    <button id = "calculateButton" onClick="calculate()">Calculate</button>
+    <div id = calcPadding>   
+    <button id = "calculateButton" onClick="calculate()">
+        Calculate
+    </button>
     </div>
+    
 
 </div>
     
