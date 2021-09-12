@@ -222,8 +222,7 @@ p {
     flex-wrap: wrap;
     margin-top: 0px;
     padding: 0px;
-    flex: 99%;
-    gap: 0px;
+    flex: 80%;
     margin-right: 0px;
 }
 #firstRounded{
@@ -328,9 +327,8 @@ input:checked + .slider:before {
 
 #addOrRemove {
   position: relative;
-  left: 12%;
+  left: 13%;
   display: flex;
-
   flex: 20%;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -341,19 +339,17 @@ input:checked + .slider:before {
   background-color: #21232b00;
   border:  none;
   color: white;
-  cursor: pointer;
-  width: 20px;
-  height: 10px; 
+  cursor: pointer;  
   margin-top: 5px;
   margin-bottom: 0px;
+  margin-right: -4px;
+  padding-left: 4px;
 }
 #adjustButton2{
   background-color: #21232b00;
   border:  none;
   color: white;
   cursor: pointer;
-  width: 20px;
-  height: 10px; 
   margin-top: 4px;
   margin-bottom: 0px;
 }
