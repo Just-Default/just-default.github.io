@@ -1,5 +1,14 @@
+*{
+    -webkit-appearance:none;
+}
+input[type=button], input[type=submit]{ -webkit-appearance:none; }
+
 body {
-  background-color: #21232b;
+  background-image: url('slide-01.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  background-color: #21232bF0;
 }
 h1 {
   color: White;
@@ -11,7 +20,7 @@ p {
 
 .titles{
   color: White;
-  padding-top: 8px;
+  padding-top: 6px;
   padding-bottom: 0px;
   text-align: left;
   font-family: Arial;
@@ -32,8 +41,8 @@ p {
     width: 480px;
     height: auto;
     border-radius: 10px;
-    border: 1px solid White;
     margin: 50px;
+    background-color: #2B181040;
 }
 #main{
     width: 420px;
@@ -64,12 +73,22 @@ p {
     margin: 0px;
     align-items: center;
 }
+
+#options {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  color: black;
+}
 #typeComboBox {
   width: 100%;
   padding: 8px 14px;
   border: 1px solid White;
   border-radius: 5px;
-  background-color: #21232b;
+  background-color: #21232b00;
   color: white;
   font-family: Arial;
   font-size: 95%;
@@ -79,7 +98,7 @@ p {
   padding: 8px 14px;
   border: 1px solid White;
   border-radius: 5px;
-  background-color: #21232b;
+  background-color: #21232b00;
   color: white;
   font-family: Arial;
   font-size: 95%;
@@ -90,14 +109,14 @@ p {
   padding: 8px 14px;
   border: 1px solid White;
   border-radius: 5px;
-  background-color: #21232b;
+  background-color: #21232b00;
   color: white;
   font-family: Arial;
   font-size: 85%;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 #removeButton{
-    background-color: #21232b;
+    background-color: #21232b00;
     color: white;
     border: none;
     padding-left: 10px;
@@ -113,7 +132,7 @@ p {
     margin-right: 0px;
 }
 #addSubButton {
-  background-color: #7E51C7;
+  background-color: #12B8AD;
   border-radius: 4px;
   border: none;
   color: white;
@@ -126,7 +145,7 @@ p {
   background-size: 100%;
   text-align: left;
   text-indent: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .titles4{
   color: #D1D1D1;
@@ -167,7 +186,7 @@ p {
   padding: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: #21232b;
+  background-color: #21232b00;
   color: white;
   font-family: Arial;
   font-size: 78%;
@@ -181,7 +200,7 @@ p {
   padding: 0px 0px;
   border: none;
   border-radius: 0px;
-  background-color: #21232b;
+  background-color: #21232b00;
   color: white;
   font-family: Arial;
   font-size: 78%;
@@ -192,7 +211,7 @@ p {
 #addedContainer {
   margin-top: 0px;
   display: flex;
-  width: 112%;
+  width: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
   justify-content: space-between;
@@ -210,27 +229,30 @@ p {
     border-radius: 10px 0px 0px 0px;
 }
 .selected {
-  background-color: #307576;
-  border: 1px solid #307576;
+  background-color: #000000D0;
+  border: 1px solid #000000B0;
   color: white;
   cursor: pointer;
   width: 30px;
   height: 17px;
   }
 .setsButton {
-  background-color: #21232b;
-  border: 1px #969696;
-  border-bottom-style: solid;
+  background-color: #00000050;
+  border: 1px #7D5C4E80;
+  border-bottom-style: none;
   border-right-style: solid;
   border-top-style: none;
   border-left-style: none;
+  
+  border-bottom-color: grey;
+  
   color: white;
   cursor: pointer;
   width: 30px;
   height: 17px;
 }
 .setsButton:hover {
-  background-color: white;
+  background-color: #FFFFFFF0;
   border: 1px #969696;
   border-bottom-style: solid;
   border-right-style: solid;
@@ -253,7 +275,7 @@ p {
   opacity: 0;
   width: 0;
   height: 0;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 .slider {
@@ -263,7 +285,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #17171C;
+  background-color: #C8BBB5;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -281,11 +303,11 @@ p {
 }
 
 input:checked + .slider {
-  background-color: #307576;
+  background-color: #17171C;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #307576;
+  box-shadow: 0 0 1px #17171C;
 }
 
 input:checked + .slider:before {
@@ -304,20 +326,21 @@ input:checked + .slider:before {
 }
 
 #addOrRemove {
+  position: relative;
+  left: 12%;
   display: flex;
-  padding-left: 10px;
+
   flex: 0%;
   margin-top: 0px;
-  margin-left: 10px;
+  
 }
 #adjustButton1{
-  background-color: #21232b;
+  background-color: #21232b00;
   border:  none;
   color: white;
   cursor: pointer;
   width: 20px;
   height: 10px; 
-  text-indent: 0px;
   margin-top: 0px;
   font-weight: 500;
   font-family: Helvetica;
@@ -325,13 +348,12 @@ input:checked + .slider:before {
   
 }
 #adjustButton2{
-  background-color: #21232b;
+  background-color: #21232b00;
   border:  none;
   color: white;
   cursor: pointer;
   width: 20px;
   height: 10px; 
-  text-indent: 0px;
   margin-top: 1px;
   padding-bottom: 0px;
   font-weight: 500;
@@ -408,27 +430,23 @@ input:checked + .slider:before {
 #calcPadding{
     padding-top: 7px;
     padding-bottom: 1px;
-    padding-right: 30px;
-    padding-left: 180px;
+    
     margin: 0px;
     align-items: center;
 }
 
 #calculateButton {
-background-color: #bf1692;
+    position: relative;
+    background-color: #3C9DCA; /* Green background */
+  border: none; /* Remove borders */
   border-radius: 4px;
-  border: none;
-  color: white;
-  cursor: pointer;
-  width: 100px;
-  height: 40px; 
-
+  color: white; /* White text */
+  padding: 12px 0px; /* Some padding */
+  font-size: 16px; /* Set a font-size */
+  left: 42%;
+  width: 120px;
   text-align: center;
-  text-indent: 0px;
-  
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: Arial;
-  font-size: 92%;
+}
+.fa {
 }
 
