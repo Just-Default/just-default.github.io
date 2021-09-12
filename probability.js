@@ -10,7 +10,6 @@ var subRolls=[];
 var subRollsInAmountOfStats=[];
 
 function calculate() {
-    var totalPercent =0;
     var toggled = document.getElementById("toggled").checked;
     
     //add loading icon
@@ -546,6 +545,7 @@ function removeSet(){
     var totalButtons = document.getElementsByClassName("button");  
     var index = selectedButton[0].name;
     
+    //if not first tab and there are more than 1 tab
     if(selectedButton.length ===1  && totalButtons.length >1 && selectedButton[0] !== document.getElementById("firstRounded")){
         selectedButton[0].parentNode.removeChild(selectedButton[0]);
         totalButtons = document.getElementsByClassName("button"); 
@@ -572,6 +572,7 @@ function removeSet(){
     subRolls.splice(index,1);
     subRollsInAmountOfStats.splice(index,1);
     }
+    //if first tab and there are more than 1 tabs
     else if(selectedButton.length ===1  && totalButtons.length >1 && index == document.getElementById("firstRounded").name){
         totalButtons[totalButtons.length -1].parentNode.removeChild(totalButtons[totalButtons.length-1]);
         
@@ -587,6 +588,7 @@ function removeSet(){
     }
     
     pushStatsForSelected();
+    calculate();
 }
 
 
