@@ -325,9 +325,9 @@ input:checked + .slider:before {
 
 #addOrRemove {
   position: relative;
-  left: 13%;
+  left: 10%;
   display: flex;
-  flex: 20%;
+  
   margin-top: 0px;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -339,9 +339,9 @@ input:checked + .slider:before {
   color: white;
   cursor: pointer;  
   margin-top: 5px;
-  margin-bottom: 0px;
-  margin-right: -4px;
-  padding-left: 4px;
+  width: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
 }
 #adjustButton2{
   background-color: #21232b00;
@@ -349,7 +349,8 @@ input:checked + .slider:before {
   color: white;
   cursor: pointer;
   margin-top: 4px;
-  margin-bottom: 0px;
+  width: 10px;
+  
 }
 #head-percentage{
   color: White;
