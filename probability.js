@@ -509,7 +509,7 @@ function highlight(element){
     pushStatsForSelected();
     
     if(!toggled){
-        document.getElementById("flex").innerHTML ="<div id='head-percentage'>Chance of getting artifact with stats at least once: -% </div>";
+        document.getElementById("flex").innerHTML ="<div id='head-percentage'>Chance of getting artifact with these stats: -% </div>";
         document.getElementById("flex2").innerHTML ="<div id='head-percentage'>Total chance in one run (20 resin): -%</div>";
         graph(0);
     }
@@ -601,11 +601,11 @@ function graph(resinRun){
     var toggled = document.getElementById("toggled").checked;
     //<font color="blue">  </font>  
     if(toggled){
-        document.getElementById("flex").innerHTML ="<div id='head-percentage'><b><font color='#B14715'>Combined</font></b> chance of getting stats at least once: </div> <div id='percentage'>" +roundedPercent +"% </div>";
+        document.getElementById("flex").innerHTML ="<div id='head-percentage'><b><font color='#B14715'>Combined</font></b> chance of getting these stats once: </div> <div id='percentage'>" +roundedPercent +"% </div>";
         document.getElementById("flex2").innerHTML ="<div id='head-percentage'>Total chance in one run (20 resin): </div> <div id='percentage'>" +resinRunRounded +"%</div>";
     }
     else{
-        document.getElementById("flex").innerHTML ="<div id='head-percentage'>Chance of getting artifact with stats at least once: </div> <div id='percentage'>" +roundedPercent +"% </div>";
+        document.getElementById("flex").innerHTML ="<div id='head-percentage'>Chance of getting artifact with these stats: </div> <div id='percentage'>" +roundedPercent +"% </div>";
         document.getElementById("flex2").innerHTML ="<div id='head-percentage'>Total chance in one run (20 resin): </div> <div id='percentage'>" +resinRunRounded +"%</div>";
     }
 
