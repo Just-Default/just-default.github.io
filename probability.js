@@ -601,7 +601,7 @@ function graph(resinRun){
     var toggled = document.getElementById("toggled").checked;
     //<font color="blue">  </font>  
     if(toggled){
-        document.getElementById("flex").innerHTML ="<div id='head-percentage'><b><font color='#B14715'>Combined</font></b> chance of getting these stats once: </div> <div id='percentage'>" +roundedPercent +"% </div>";
+        document.getElementById("flex").innerHTML ="<div id='head-percentage'><b><font color='#B14715'>Combined</font></b> chance of getting one of these artifacts: </div> <div id='percentage'>" +roundedPercent +"% </div>";
         document.getElementById("flex2").innerHTML ="<div id='head-percentage'>Total chance in one run (20 resin): </div> <div id='percentage'>" +resinRunRounded +"%</div>";
     }
     else{
